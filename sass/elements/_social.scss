@@ -1,0 +1,14 @@
+.social {
+    display: flex;
+    column-gap: 20px;
+
+    // Mobile
+    @media (max-width: 899px) {
+        column-gap: unset;
+        justify-content: space-between;
+    }
+}
+.social__icon {
+    width: 20px;
+    height: 20px;
+}

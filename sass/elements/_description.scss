@@ -1,0 +1,18 @@
+.description {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.6;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        font-size: 16px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        font-size: 14px;
+    }
+}

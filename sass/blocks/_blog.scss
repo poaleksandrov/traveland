@@ -1,0 +1,136 @@
+.blog {
+    padding-top: 70px;
+    padding-bottom: 140px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+.blog__header,
+.blog__descr {
+    text-align: center;
+}
+
+.blog__header {
+    margin-bottom: 20px;
+}
+
+.blog__descr {
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+    }
+}
+
+.blog__posts {
+    display: grid;
+    grid-template-columns: 555px 545px;
+    grid-template-rows: repeat(3, 200px);
+    gap: 30px;
+
+    & > *:first-child {
+        grid-row: 1 / 4;
+
+        // Mobile
+        @media (max-width: 899px) {
+            grid-row: auto;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        grid-template-columns: repeat(2, 420px);
+        grid-template-rows: repeat(3, 140px);
+        gap: 20px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        display: block;
+
+        & > * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & > *:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.blog .card:first-child {
+    flex-direction: column;
+    row-gap: 35px;
+    align-items: flex-start;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        row-gap: 20px;
+    }
+
+    & .card__img {
+        width: 555px;
+        height: 397px;
+
+        // Tablet
+        @media (max-width: 1199px) {
+            width: 420px;
+            height: 270px;
+        }
+
+        // Mobile
+        @media (max-width: 899px) {
+            width: 570px;
+            height: 350px;
+        }
+
+        // Mobile XS
+        @media (max-width: 599px) {
+            width: 290px;
+            height: 180px;
+        }
+    }
+
+    & .card__content {
+        width: 470px;
+
+        // Tablet
+        @media (max-width: 1199px) {
+            width: 435px;
+        }
+
+        // Mobile
+        @media (max-width: 899px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    & .card__title {
+        line-height: 1.6;
+    }
+
+    & .card__author {
+        font-weight: 500;
+    }
+}

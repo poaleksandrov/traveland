@@ -1,0 +1,37 @@
+.offers {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
+
+.offers__header,
+.offers__descr {
+    text-align: center;
+}
+
+.offers__header {
+    margin-bottom: 20px;
+}
+
+.offers__descr {
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 655px;
+
+    // Mobile
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+}

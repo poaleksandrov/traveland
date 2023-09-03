@@ -1,0 +1,25 @@
+// Fonts
+@import "./fonts/fonts";
+
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Elements
+@import "./elements/logo";
+@import "./elements/nav";
+@import "./elements/nav-icon";
+@import "./elements/button";
+@import "./elements/title";
+@import "./elements/description";
+@import "./elements/cards";
+@import "./elements/slider";
+@import "./elements/social";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/location";
+@import "./blocks/offers";
+@import "./blocks/blog";
+@import "./blocks/footer";

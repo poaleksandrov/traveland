@@ -1,0 +1,48 @@
+.h1 {
+    color: #FFF;
+    font-family: Gelasio;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        font-size: 54px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        font-size: 46px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        font-size: 34px;
+    }
+}
+
+.h2 {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    // Mobile
+    @media (max-width: 899px) {
+        font-size: 32px;
+    }
+}
+
+.h3 {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+}
